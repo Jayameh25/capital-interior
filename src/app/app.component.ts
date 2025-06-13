@@ -42,7 +42,7 @@ import { RouterModule } from '@angular/router';
                   routerLink="/gallery"
                   style="color: black; font-weight: 500; font-size: 1.6rem;"
              
-                >Gallery</a>
+                >E-Catalogue</a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" routerLink="/what-we-do"
@@ -69,7 +69,7 @@ import { RouterModule } from '@angular/router';
             <img
               src="assets/c1.jpg"
               class="d-block w-100"
-              style="height: 90vh; object-fit: cover;"
+              style="height: 160vh; object-fit: cover;"
               alt="Interior 1"
             >
           </div>
@@ -77,7 +77,7 @@ import { RouterModule } from '@angular/router';
             <img
               src="assets/c2.jpg"
               class="d-block w-100"
-              style="height: 90vh; object-fit: cover;"
+              style="height: 160vh; object-fit: cover;"
               alt="Interior 2"
             >
           </div>
@@ -85,7 +85,7 @@ import { RouterModule } from '@angular/router';
             <img
               src="assets/c3.jpg"
               class="d-block w-100"
-              style="height: 90vh; object-fit: cover;"
+              style="height: 160vh; object-fit: cover;"
               alt="Interior 3"
             >
           </div>
