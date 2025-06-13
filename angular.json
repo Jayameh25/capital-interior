@@ -14,9 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": "docs",
-            
             "baseHref": "/capital-interior/",
-            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
