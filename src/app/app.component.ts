@@ -77,7 +77,7 @@ import { RouterModule } from '@angular/router';
             <img
               src="assets/c2.jpg"
               class="d-block w-100"
-              style="height: 160vh; object-fit: cover;"
+              style="height: 140vh; object-fit: cover;"
               alt="Interior 2"
             >
           </div>
@@ -85,8 +85,24 @@ import { RouterModule } from '@angular/router';
             <img
               src="assets/c3.jpg"
               class="d-block w-100"
-              style="height: 160vh; object-fit: cover;"
+              style="height: 140vh; object-fit: cover;"
               alt="Interior 3"
+            >
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/c4.jpg"
+              class="d-block w-100"
+              style="height: 140vh; object-fit: cover;"
+              alt="Interior 4"
+            >
+          </div>
+           <div class="carousel-item">
+            <img
+              src="assets/c5.jpg"
+              class="d-block w-100"
+              style="height: 140vh; object-fit: cover;"
+              alt="Interior 5"
             >
           </div>
         </div>
