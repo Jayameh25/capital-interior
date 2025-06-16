@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f8;
@@ -19,8 +20,9 @@ body {
 
 .what-we-do-section h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 .intro {
@@ -28,6 +30,7 @@ body {
   font-size: 1.1rem;
   margin-bottom: 3rem;
   color: #555;
+  padding: 0 1rem;
 }
 
 /* Services Grid */
@@ -41,7 +44,7 @@ body {
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -58,12 +61,46 @@ body {
 
 .service-card h3 {
   margin: 1rem 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #222;
 }
 
 .service-card p {
   padding: 0 1rem 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .what-we-do-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .service-card img {
+    height: 180px;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
 }

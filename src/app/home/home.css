@@ -1,5 +1,11 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-
+/* Hero Section */
 .hero-section {
   background-size: cover;
   background-position: center;
@@ -9,10 +15,7 @@
   justify-content: center;
   color: #fff;
   text-align: center;
-}
-
-.service{
- height:150px;
+  padding: 0 20px;
 }
 
 .hero-text h1 {
@@ -32,12 +35,24 @@
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease;
 }
 
+.btn-primary:hover {
+  background-color: #e65c00;
+}
+
+/* Services Section */
 .services-section {
   padding: 60px 20px;
   background-color: #f9f9f9;
   text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 .services {
@@ -49,17 +64,30 @@
 
 .service-card {
   background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   padding: 20px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
 }
 
 .service-card img {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
+.service-card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+/* About Section */
 .about-section {
   background-color: #333;
   color: white;
@@ -72,6 +100,16 @@
   margin: auto;
 }
 
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 .btn-secondary {
   padding: 10px 20px;
   background-color: #fff;
@@ -81,4 +119,54 @@
   font-weight: bold;
   margin-top: 20px;
   display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+
+  .service-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
 }

@@ -64,3 +64,11 @@
     font-size: 1.4rem;
   }
 }
+
+.contact-container h2,
+.contact-container h3 {
+  color: #333;
+}
+.contact-container a {
+  text-decoration: none;
+}

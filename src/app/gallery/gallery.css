@@ -79,3 +79,13 @@ body {
   color: #ccc;
   margin-top: 3rem;
 }
+
+@media (max-width: 576px) {
+  .hero-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .category-card img {
+    height: 180px;
+  }
+}
