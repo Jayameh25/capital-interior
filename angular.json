@@ -13,8 +13,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/capital-interior",
-            "baseHref": "/capital-interior/",
+            "outputPath": "docs/browser",
+            "baseHref": "./",
             "polyfills": [
               "zone.js"
             ],

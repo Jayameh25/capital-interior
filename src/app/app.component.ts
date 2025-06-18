@@ -35,7 +35,7 @@ import { RouterModule } from '@angular/router';
                   style="color: black; font-weight: 500; font-size: 1.6rem;"
                  
                 >Home</a>
-              </li>
+              </li> 
               <li class="nav-item">
                 <a
                   class="nav-link"

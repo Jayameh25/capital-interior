@@ -104,3 +104,18 @@ body {
     font-size: 0.9rem;
   }
 }
+
+.what-we-do-section {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.what-we-do-section h2,
+.what-we-do-section h3 {
+  font-weight: 600;
+  color: #212529;
+}
+
+.what-we-do-section ul {
+  list-style-type: disc;
+}
