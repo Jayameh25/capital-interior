@@ -22,6 +22,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/thank-you.html",
               "src/CNAME",
               {
                 "glob": "**/*",

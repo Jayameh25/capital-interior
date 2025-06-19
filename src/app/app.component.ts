@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { WhyChooseUs } from './why-choose-us/why-choose-us';
+import { FooterComponent } from './footer/footer';
+
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, WhyChooseUs],
+  imports: [RouterModule, WhyChooseUs, FooterComponent],
   template: `
     <!-- Hero Section Wrapper -->
     <div style="position: relative;">
@@ -19,7 +21,7 @@ import { WhyChooseUs } from './why-choose-us/why-choose-us';
       >
         <div class="container">
           <a class="navbar-brand" routerLink="/">
-            <img src="assets/logo.png" alt="Interior Design Logo" height="60" width="180">
+            <img src="assets/logo.jpg" alt="Interior Design Logo" height="60" width="180">
           </a>
           <button
             class="navbar-toggler"
@@ -141,7 +143,7 @@ import { WhyChooseUs } from './why-choose-us/why-choose-us';
     <div class="container mt-4">
       <router-outlet></router-outlet>
     </div>
-
+    <app-footer></app-footer>
     <!-- WhatsApp Chat Button -->
     <a href="https://wa.me/919650873566" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
       <img src="assets/whatsapp-icon.jpg" alt="WhatsApp" />
