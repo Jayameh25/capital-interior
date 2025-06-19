@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { WhyChooseUs } from './why-choose-us/why-choose-us';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, WhyChooseUs],
   template: `
     <!-- Hero Section Wrapper -->
     <div style="position: relative;">
@@ -42,12 +45,17 @@ import { RouterModule } from '@angular/router';
                   routerLink="/gallery"
                   style="color: black; font-weight: 500; font-size: 1.6rem;"
              
-                >E-Catalogue</a>
+                >E-Catalogue </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" routerLink="/what-we-do"
                 style="color: black; font-weight: 500; font-size: 1.6rem;"
-                >What We Do</a>
+                >About Us</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" routerLink="/services"
+                style="color: black; font-weight: 500; font-size: 1.6rem;"
+                >Services</a>
               </li>
               <li class="nav-item">
                 <a
@@ -55,7 +63,7 @@ import { RouterModule } from '@angular/router';
                   routerLink="/contact"
                   style="color: black; font-weight: 500; font-size: 1.6rem;"
                  
-                >Contact</a>
+                >Contact Us</a>
               </li>
             </ul>
           </div>
@@ -125,10 +133,22 @@ import { RouterModule } from '@angular/router';
       </div>
     </div>
 
+    
+    <!-- Why Choose Us Section -->
+    <app-why-choose-us></app-why-choose-us>
+
     <!-- Main Content -->
     <div class="container mt-4">
       <router-outlet></router-outlet>
     </div>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/919650873566" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+      <img src="assets/whatsapp-icon.jpg" alt="WhatsApp" />
+      <span class="qlwapp-text">How can I help you?</span>
+    </a>
+
   `
+
 })
 export class AppComponent {}
