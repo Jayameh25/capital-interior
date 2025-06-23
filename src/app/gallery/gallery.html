@@ -1,59 +1,27 @@
+<!-- Header -->
+<header class="hero-header">
+  <h1>Explore Our Interior Categories</h1>
+  <p>Click on any category to view the design gallery.</p>
+</header>
 
-  <!-- Header -->
-  <header class="hero-header">
-    <h1>Explore Our Interior Categories</h1>
-    <p>Click on any category to view the design gallery.</p>
-  </header>
-
-  <!-- Gallery Section -->
-  <main class="container py-5">
-    <div class="row">
-
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="category-card" onclick="alert('Bed Room Designs Coming Soon!')">
-          <img src="assets/bedroom.jpg" alt="Bed Room Design" />
-          <div class="category-title">Bed Room Design</div>
-        </div>
+<!-- Gallery Cards -->
+<main class="container py-5">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 mb-4" *ngFor="let cat of categories">
+      <div class="category-card" (click)="openModal(cat.images)">
+        <img [src]="cat.cover" [alt]="cat.name" />
+        <div class="category-title">{{ cat.name }}</div>
       </div>
-
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="category-card" onclick="alert('Dining Room Designs Coming Soon!')">
-          <img src="assets/dinning.jpg" alt="Dining Room Design" />
-          <div class="category-title">Dining Room Design</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="category-card" onclick="alert('Entrance Door Designs Coming Soon!')">
-          <img src="assets/entreance.jpg" alt="Entrance Door Design" />
-          <div class="category-title">Entrance Door Design</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="category-card" onclick="alert('Foyer Designs Coming Soon!')">
-          <img src="assets/foyer.jpg" alt="Foyer Design" />
-          <div class="category-title">Foyer Design</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="category-card" onclick="alert('Kitchen Designs Coming Soon!')">
-          <img src="assets/kitchen1.jpg" alt="Kitchen Design" />
-          <div class="category-title">Kitchen Design</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="category-card" onclick="alert('Living Room Designs Coming Soon!')">
-          <img src="assets/living.jpg" alt="Living Room Design" />
-          <div class="category-title">Living Room</div>
-        </div>
-      </div>
-
     </div>
-  </main>
+  </div>
+</main>
 
- 
-
-
+<!-- Modal Gallery -->
+<div class="modal-backdrop" *ngIf="modalOpen">
+  <div class="modal-content">
+    <button class="close-btn" (click)="closeModal()">×</button>
+    <div class="gallery-grid">
+      <img *ngFor="let img of selectedCategoryImages" [src]="img" />
+    </div>
+  </div>
+</div>
