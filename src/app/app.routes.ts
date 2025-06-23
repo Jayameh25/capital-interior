@@ -10,5 +10,5 @@ export const routes: Routes = [
   { path: 'gallery', component: Gallery },
   { path: 'contact', component: Contact },
   { path: 'what-we-do', component: WhatWeDoComponent },
-   { path: 'why-choose-us', component: WhyChooseUs },
+  { path: 'why-choose-us', component: WhyChooseUs },
 ];

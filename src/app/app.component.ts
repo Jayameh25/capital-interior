@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { WhyChooseUs } from './why-choose-us/why-choose-us';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer';
-
-
+import { filter } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, WhyChooseUs, FooterComponent],
+  imports: [RouterModule, CommonModule, FooterComponent],
   template: `
     <!-- Hero Section Wrapper -->
     <div style="position: relative;">
@@ -135,9 +134,7 @@ import { FooterComponent } from './footer/footer';
       </div>
     </div>
 
-    
-    <!-- Why Choose Us Section -->
-    <app-why-choose-us></app-why-choose-us>
+
 
     <!-- Main Content -->
     <div class="container mt-4">
@@ -153,4 +150,5 @@ import { FooterComponent } from './footer/footer';
   `
 
 })
-export class AppComponent {}
+export class AppComponent {
+}
