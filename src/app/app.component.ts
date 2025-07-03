@@ -72,19 +72,19 @@ import { CommonModule } from '@angular/common';
       </nav>
 
       <!-- Carousel -->
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="assets/c1.jpg"
+              src="assets/4.jpg"
               class="d-block w-100"
-              style="height: 160vh; object-fit: cover;"
+              style="height: 170vh; object-fit: cover;"
               alt="Interior 1"
             >
           </div>
           <div class="carousel-item">
             <img
-              src="assets/c2.jpg"
+              src="assets/2.png"
               class="d-block w-100"
               style="height: 140vh; object-fit: cover;"
               alt="Interior 2"
@@ -92,7 +92,7 @@ import { CommonModule } from '@angular/common';
           </div>
           <div class="carousel-item">
             <img
-              src="assets/c3.jpg"
+              src="assets/4.png"
               class="d-block w-100"
               style="height: 140vh; object-fit: cover;"
               alt="Interior 3"
@@ -100,7 +100,7 @@ import { CommonModule } from '@angular/common';
           </div>
           <div class="carousel-item">
             <img
-              src="assets/c4.jpg"
+              src="assets/3.jpg"
               class="d-block w-100"
               style="height: 140vh; object-fit: cover;"
               alt="Interior 4"
@@ -108,7 +108,7 @@ import { CommonModule } from '@angular/common';
           </div>
            <div class="carousel-item">
             <img
-              src="assets/c5.jpg"
+              src="assets/kitchena.jpg"
               class="d-block w-100"
               style="height: 140vh; object-fit: cover;"
               alt="Interior 5"
