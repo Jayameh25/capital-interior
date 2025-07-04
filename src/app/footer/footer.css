@@ -1,85 +1,67 @@
-.site-footer {
-  background-color: rosybrown;
-  color: #ffffff;
-  padding: 40px 20px 10px;
-  font-size: 15px;
+.footer-bottom {
+  background-color: #222831;
+  padding: 25px 20px;
+  color: #eeeeee;
+  border-top: 2px solid #393e46;
 }
 
-.footer-container {
+.footer-bottom-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  align-items: flex-start;
   max-width: 1200px;
   margin: auto;
 }
 
-.footer-column {
-  flex: 1 1 250px;
-  min-width: 220px;
+.contact-details {
+  flex: 1 1 300px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-.footer-column h3 {
+.contact-details h4 {
+  margin-bottom: 10px;
+  color: #ffc107;
   font-size: 1.2rem;
-  margin-bottom: 15px;
+}
+
+.contact-details p {
+  margin: 6px 0;
+}
+
+.contact-details a {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
   color: #ffffff;
 }
 
-.footer-column p,
-.footer-column a {
-  color: #d0d0d0;
-  text-decoration: none;
-  margin-bottom: 8px;
-  display: block;
+.contact-details i {
+  margin-right: 8px;
+  color: #00adb5;
 }
 
-.footer-form input,
-.footer-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  border: none;
-}
-
-.footer-form button {
-  background-color: #5c6bc0;
-  color: white;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.social-icons a img {
-  width: 58px;
-  margin-right: 12px;
-  transition: transform 0.3s ease;
-}
-
-.social-icons a:hover img {
-  transform: scale(1.2);
-}
-
-.footer-bottom {
+copyright {
   text-align: center;
-  margin-top: 30px;
+  flex: 1 1 200px;
+  text-align: right;
   font-size: 14px;
-  color: #aaaaaa;
-  border-top: 1px solid #444;
-  padding-top: 15px;
+  color: #cccccc;
+  margin-top: 15px;
 }
 
 @media (max-width: 768px) {
-  .footer-container {
+  .footer-bottom-content {
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    gap: 20px;
   }
 
-  .footer-column {
-    width: 100%;
+  .copyright {
+    text-align: center;
   }
 }

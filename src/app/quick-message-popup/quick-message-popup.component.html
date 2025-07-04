@@ -1,0 +1,29 @@
+<!-- Floating button -->
+<button class="qm‑fab" (click)="togglePopup()">
+  <span class="material-icons">Enquiry</span>
+</button>
+
+<!-- Overlay -->
+<div class="qm‑overlay" *ngIf="isOpen()">
+  <div class="qm‑dialog">
+    <button class="qm‑close" (click)="togglePopup()">✕</button>
+
+    <h3>Quick Message</h3>
+
+    <form
+      action="https://formsubmit.co/97a123bb5f1625a16627f97a28524a8e"
+      method="POST"
+      (submit)="togglePopup()"
+    >
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://capitalinterior.co.in/thank-you.html" />
+
+      <input  type="text"    name="name"    placeholder="Name"        required />
+      <input  type="number"  name="Contact" placeholder="Contact No." required />
+      <input  type="email"   name="email"   placeholder="Email"       required />
+      <textarea name="message" rows="3" placeholder="Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>

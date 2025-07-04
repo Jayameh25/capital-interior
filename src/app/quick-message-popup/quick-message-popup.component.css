@@ -1,0 +1,72 @@
+/* 1. Floating action button (bottom‑right) */
+.qm‑fab {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 999;
+  height: 65px;  width: 65px;
+  border-radius: 50%;
+  background: #00adb5;         /* accent colour */
+  color: #fff;
+  border: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+.qm‑fab:hover { transform: scale(1.1); }
+
+/* 2. Full‑screen dimmed overlay */
+.qm‑overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.55);
+  display: flex;  align-items: center;  justify-content: center;
+  z-index: 998;
+}
+
+/* 3. Dialog card */
+.qm‑dialog {
+  width: 90%;     max-width: 420px;
+  background: #222831;
+  color: #eee;
+  border-radius: 12px;
+  padding: 24px 28px 32px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,.6);
+}
+.qm‑dialog h3 { margin: 0 0 12px; color: #ffc107; }
+
+/* 4. Close “X” button */
+.qm‑close {
+  position: absolute; top: 12px; right: 12px;
+  background: transparent; color: #ccc;
+  border: 0; font-size: 20px; cursor: pointer;
+}
+
+/* 5. Form fields */
+.qm‑dialog input,
+.qm‑dialog textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+.qm‑dialog button[type="submit"] {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ffc107;
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+.qm‑dialog button[type="submit"]:hover { opacity: .85; }
+
+/* Mobile tweaks */
+@media (max-width:480px){
+  .qm‑dialog { padding: 20px 20px 28px; }
+}
