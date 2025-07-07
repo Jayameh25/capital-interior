@@ -26,9 +26,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #ff5b00;
+  background-color: sandybrown;
   color: white;
-  border-left: 10px solid #ff5b00;
+  border-left: 10px solid sandybrown;
 }
 
 .faq-icon {
